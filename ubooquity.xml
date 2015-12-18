@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
 <Plugin>True</Plugin>
-<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Sickbeard.plg</PluginURL>
+<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Ubooquity.plg</PluginURL>
 <PluginAuthor>PhAzE</PluginAuthor>
 <Beta>False</Beta>
-<Category>Downloaders: MediaApp:Video</Category>
-<Name>Sickrage</Name>
+<Category>MediaApp:Books</Category>
+<Name>Ubooquity</Name>
 <Description>
-Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.
+Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.
 </Description>
 <Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
-<Icon>https://avatars0.githubusercontent.com/u/9251163?v=3&s=400</Icon>
-<Project>https://github.com/SickRage/SickRage</Project>
+<Icon>http://i.imgur.com/RCyKDsT.png</Icon>
+<Project>http://vaemendis.net/ubooquity/</Project>
 <Changes>
 2015.11.04.1
 ------------
 - Fixed jQuery to check if loaded before loading itself in, this fixes stuck loader icon on settings page
-- Fixed libxslt dependency as previous version was made for a different glibc version, now uses native version
-- Updated pyOpenssl to 0.15 and added required dependencies
-
-2015.10.04.1
-------------
-- Updated certificates package to newer version
-
-2015.09.11.1
-------------
-- Fixed forceupdate being on all the time, which breaks SickRage and other repos that don't use that feature
 
 2015.09.01.1
 ------------
@@ -62,23 +52,6 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 2015.07.28.1
 ------------
 - Fixed glitch in updater that was messing up the entire OS on random occasions
-- Fixed link problem with Cheetah
-- Added new dependencies for Cheetah, now verified working properly
-
-2015.07.23.1
-------------
-- Fixed python symlinks for better performance and less errors
-- Added SSL root certificates for unRAID 5 users
-- Added missing dependencies for pyOpenSSL
-
-2015.07.01.1
-------------
-- Updated for unRAID 6 final to comply with changes in OS
-
-2015.05.03.1
-------------
-- Fixed remove script so it no longer shows an error on Unraid 5
-- Added change log to plugins page on Unraid GUI
 
 INITIAL RELEASE
 ---------------

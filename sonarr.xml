@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
 <Plugin>True</Plugin>
-<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Sickbeard.plg</PluginURL>
+<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Sonarr.plg</PluginURL>
 <PluginAuthor>PhAzE</PluginAuthor>
 <Beta>False</Beta>
 <Category>Downloaders: MediaApp:Video</Category>
-<Name>Sickrage</Name>
+<Name>Sonarr</Name>
 <Description>
-Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.
+Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 </Description>
 <Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
-<Icon>https://avatars0.githubusercontent.com/u/9251163?v=3&s=400</Icon>
-<Project>https://github.com/SickRage/SickRage</Project>
+<Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sonarr-icon.png</Icon>
+<Project>https://sonarr.tv/</Project>
 <Changes>
 2015.11.04.1
 ------------
 - Fixed jQuery to check if loaded before loading itself in, this fixes stuck loader icon on settings page
-- Fixed libxslt dependency as previous version was made for a different glibc version, now uses native version
-- Updated pyOpenssl to 0.15 and added required dependencies
-
-2015.10.04.1
-------------
-- Updated certificates package to newer version
-
-2015.09.11.1
-------------
-- Fixed forceupdate being on all the time, which breaks SickRage and other repos that don't use that feature
 
 2015.09.01.1
 ------------
@@ -62,14 +52,11 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 2015.07.28.1
 ------------
 - Fixed glitch in updater that was messing up the entire OS on random occasions
-- Fixed link problem with Cheetah
-- Added new dependencies for Cheetah, now verified working properly
 
 2015.07.23.1
 ------------
-- Fixed python symlinks for better performance and less errors
 - Added SSL root certificates for unRAID 5 users
-- Added missing dependencies for pyOpenSSL
+- Fixed certificates with Mono so SSL works with Mono apps
 
 2015.07.01.1
 ------------
@@ -79,6 +66,10 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 ------------
 - Fixed remove script so it no longer shows an error on Unraid 5
 - Added change log to plugins page on Unraid GUI
+
+2015.02.08.1
+------------
+- Fixed removal of old mono files
 
 INITIAL RELEASE
 ---------------
