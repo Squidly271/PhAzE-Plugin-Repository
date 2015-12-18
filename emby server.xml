@@ -10,7 +10,7 @@
 Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono. Bringing together movies, music, television and more in one dazzling interface.
 </Description>
 <Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
-<Icon>https://avatars3.githubusercontent.com/u/3607473?v=3&s=400</Icon>
+<Icon>https://raw.githubusercontent.com/MediaBrowser/Emby.Resources/master/images/Logos/logoicon.png</Icon>
 <Project>https://emby.media/</Project>
 <Changes>
 2015.11.25.1
