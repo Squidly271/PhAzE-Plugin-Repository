@@ -7,7 +7,7 @@
 <Category>Downloaders: MediaServer:Music</Category>
 <Name>Headphones</Name>
 <Description>
-Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole. 
+Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, uTorrent and Blackhole. 
 </Description>
 <Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
 <Icon>https://raw.githubusercontent.com/rembo10/headphones/master/data/images/headphoneslogo.png</Icon>
