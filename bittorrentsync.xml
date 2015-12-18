@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Plugin>True</Plugin>
+<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Btsync.plg</PluginURL>
+<PluginAuthor>PhAzE</PluginAuthor>
+<Beta>False</Beta>
+<Category>Cloud:</Category>
+<Name>BitTorrent Sync</Name>
+<Description>
+BitTorrent Sync, or simply - Sync - is an application for data synchronization. Its primary goal is to keep designated folder content same on 2 or more devices / computers. As soon as something changes on one computer, change (would it be changed content of a file, file renaming or deletion, etc.) should be propagated to all other computer(s) that want to keep the folder synchronized.Sync is available for a bunch of platforms, both desktop and mobile, which gives a good usage flexibility.</Description>
+<Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
+<Icon>http://i.i.cbsi.com/cnwk.1d/i/tim/2013/04/23/BitTorrentSyncIconX.png</Icon>
+<Project>https://www.getsync.com/</Project>
+<Changes>
+
+</Changes>
+</Containers>

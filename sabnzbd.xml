@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Plugin>True</Plugin>
+<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Sabnzbd.plg</PluginURL>
+<PluginAuthor>PhAzE</PluginAuthor>
+<Beta>False</Beta>
+<Category>Downloaders:</Category>
+<Name>SabNZBd</Name>
+<Description>
+SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.
+</Description>
+<Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
+<Icon>https://lh6.googleusercontent.com/jsz4zVFTJuMP-Ct803I774I-qo5vXVGQBTVZJD6xmCvQDD3UWpyRaDK6_DX0kQJakI-lX20xsA=s128-h128-e365</Icon>
+<Project>http://sabnzbd.org/</Project>
+<Changes>
+2015.11.04.1
+------------
+- Fixed jQuery to check if loaded before loading itself in, this fixes stuck loader icon on settings page
+- Fixed libxslt dependency as previous version was made for a different glibc version, now uses native version
+- Updated pyOpenssl to 0.15 and added required dependencies
+
+2015.10.04.1
+------------
+- Updated certificates package to newer version
+
+2015.09.11.1
+------------
+- Fixed current version check, and PORT sync back script
+
+2015.09.01.1
+------------
+- V3 initial release
+- Added environment shortcut, Appname-env, so users can access the environment easier from anywhere
+- Added display for array state and app version number
+- Added WebUI button instead of having to click on the word 'running'
+- Added loading screen to display what the app is doing when the plugin page is loading (not working on unRAID 5)
+- Added new icons for warnings
+- Added app config sync back to plg config so settings are transfered on app stop
+- Added plugin logger function, writes to log file in /tmp dir for each plugin
+- Added activity log button so users can see hostory of plugin controls being used
+- Added support for HTTPS in any application that allows it and fixed apps that had broken HTTPS
+- Added ellipsis for version numbers so long hashes don't mess up the UI layout
+- Updated certs to 2015 version instead of using old 2013 version
+- Updated plugin to follow array state, disables function if array is offline
+- Updated all of the PHP code for a newer unified look
+- Updated for dark theme on unRAID 6
+- Updated PHP styles so they are all moved to CSS sheets instead of being all over the place
+- Updated CSS to standardized and organized layout
+- Updated all variables to use LOCAL where possible to reduce any variable leakage and reduce RAM usage
+- Updated plg.old creation and moved it into the .plg file
+- Changed dependencies independent location codebase so they can be installed in other locations
+- Changed dependencies so if cache drive is found, they are installed there
+- Changed dependencies so if no cache drive is found, they are installed in RAM drive like normal
+- Changed warnings so they are less intrusive and take up less space
+- Changed RC code so all chown commands and mkdir commands reside in one funtion
+- Changed 30% of the RC code, has been rewritten for better control of the application
+- Fixed text that is displayed when starting and stopping app, minimal shown, logged in activity log in detail
+- Fixed capitalization across all plugins to match on the UI
+- Moved dependency install out of .plg file into RC file, prior to write export function
+- Verified all return, break, and exit codes to be used in proper spots to prevent code breakage
+
+2015.07.28.1
+------------
+- Fixed glitch in updater that was messing up the entire OS on random occasions
+
+2015.07.23.1
+------------
+- Fixed python symlinks for better performance and less errors
+- Added SSL root certificates for unRAID 5 users
+- Added missing dependencies for pyOpenSSL
+
+2015.07.01.1
+------------
+- Updated for unRAID 6 final to comply with changes in OS
+
+2015.05.03.1
+------------
+- Fixed remove script so it no longer shows an error on Unraid 5
+- Added change log to plugins page on Unraid GUI
+
+INITIAL RELEASE
+---------------
+- Re-writen from scratch to run with Unraid 6 Plugin Manager
+- Universal based plugin now downloads appropriate depedencies based on the OS architeture used
+- Installs from USB copy if no internet connection is found and files exist on USB
+- Added GUI setting to disable online checks by the plugin on page load
+- Added dependency section to view main dependency versions and very they are working
+- Added ability to uninstall the plugin and files from within the plugin GUI
+- Dependencies now install to a common folder and app starts with a wrapper script
+- Wrapper script adds environment variables for the common dependency folder upon start
+- When plugin is uninstalled from PLGMGR or plugin GUI all files even dependencies are removed
+- Plugin uninstall leaves installdir and configdir, up to user to delete those if they are not needed
+</Changes>
+</Containers>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Plugin>True</Plugin>
+<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Embyserver.plg</PluginURL>
+<PluginAuthor>PhAzE</PluginAuthor>
+<Beta>False</Beta>
+<Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+<Name>Emby Server</Name>
+<Description>
+Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono. Bringing together movies, music, television and more in one dazzling interface.
+</Description>
+<Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
+<Icon>https://avatars3.githubusercontent.com/u/3607473?v=3&s=400</Icon>
+<Project>https://emby.media/</Project>
+<Changes>
+2015.11.25.1
+------------
+- Fixed FFMPEG to use plugin version rather than Emby supplied version to fix video playback
+
+2015.11.25.1
+------------
+- Fixed repo location to NOT exclude mono text which was preventing the binary and MD5 from being located
+
+2015.11.04.1
+------------
+- Fixed jQuery to check if loaded before loading itself in, this fixes stuck loader icon on settings page
+
+2015.10.04.1
+------------
+- Updated certificates package to newer version
+
+2015.09.26.1
+------------
+- Fixed install to cull out filenames with Mono in them, thus removing duplicate files
+
+2015.09.01.1
+------------
+- V3 initial release
+- Added environment shortcut, Appname-env, so users can access the environment easier from anywhere
+- Added display for array state and app version number
+- Added WebUI button instead of having to click on the word 'running'
+- Added loading screen to display what the app is doing when the plugin page is loading (not working on unRAID 5)
+- Added new icons for warnings
+- Added app config sync back to plg config so settings are transfered on app stop
+- Added plugin logger function, writes to log file in /tmp dir for each plugin
+- Added activity log button so users can see hostory of plugin controls being used
+- Added support for HTTPS in any application that allows it and fixed apps that had broken HTTPS
+- Added ellipsis for version numbers so long hashes don't mess up the UI layout
+- Updated certs to 2015 version instead of using old 2013 version
+- Updated plugin to follow array state, disables function if array is offline
+- Updated all of the PHP code for a newer unified look
+- Updated for dark theme on unRAID 6
+- Updated PHP styles so they are all moved to CSS sheets instead of being all over the place
+- Updated CSS to standardized and organized layout
+- Updated all variables to use LOCAL where possible to reduce any variable leakage and reduce RAM usage
+- Updated plg.old creation and moved it into the .plg file
+- Changed dependencies independent location codebase so they can be installed in other locations
+- Changed dependencies so if cache drive is found, they are installed there
+- Changed dependencies so if no cache drive is found, they are installed in RAM drive like normal
+- Changed warnings so they are less intrusive and take up less space
+- Changed RC code so all chown commands and mkdir commands reside in one funtion
+- Changed 30% of the RC code, has been rewritten for better control of the application
+- Fixed text that is displayed when starting and stopping app, minimal shown, logged in activity log in detail
+- Fixed capitalization across all plugins to match on the UI
+- Moved dependency install out of .plg file into RC file, prior to write export function
+- Verified all return, break, and exit codes to be used in proper spots to prevent code breakage
+
+2015.07.28.1
+------------
+- Fixed glitch in updater that was messing up the entire OS on random occasions
+
+2015.07.23.1
+------------
+- Added SSL root certificates for unRAID 5 users
+- Added Mono certificates to resolve SSL with Mono
+
+2015.07.01.1
+------------
+- Updated for unRAID 6 final to comply with changes in OS
+
+2015.05.27.1
+------------
+- Updated Emby repo so that updater can locate new versions of the app again
+
+2015.05.03.1
+------------
+- Fixed remove script so it no longer shows an error on Unraid 5
+- Added change log to plugins page on Unraid GUI
+
+2015.04.07.1
+------------
+- Removed GCC dependency as it will cause issues and is not required by Emby
+
+2015.04.01.1
+------------
+- Compiled ImageMagick for PhAzE plugins
+- Added dependency for ImageMagick
+- Removed dependency for GDIPlus
+- Verified dependency and version of WebP for compatibility with ImageMagick
+- Updated many dependency files used by ImageMagick
+
+2015.03.28.1
+------------
+- Added backwards compatibility for the older Mbserver plugin files
+
+2015.03.27.1
+------------
+- Mbserver.plg now used to update to this Embyserver.plg plugin
+- Media Browser Server renamed to Emby Server
+
+2015.02.08.1
+------------
+- Added FFMPEG as a dependency
+- Updated PHP to show FFMPEG version (Unraid 5 uses version 1.x still)
+- Fixed removal of older mono files
+
+INITIAL RELEASE
+---------------
+- Re-writen from scratch to run with Unraid 6 Plugin Manager
+- Universal based plugin now downloads appropriate depedencies based on the OS architeture used
+- Installs from USB copy if no internet connection is found and files exist on USB
+- Added GUI setting to disable online checks by the plugin on page load
+- Added dependency section to view main dependency versions and very they are working
+- Added ability to uninstall the plugin and files from within the plugin GUI
+- Dependencies now install to a common folder and app starts with a wrapper script
+- Wrapper script adds environment variables for the common dependency folder upon start
+- When plugin is uninstalled from PLGMGR or plugin GUI all files even dependencies are removed
+- Plugin uninstall leaves installdir and configdir, up to user to delete those if they are not needed
+</Changes>
+</Containers>
