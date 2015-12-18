@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
 <Plugin>True</Plugin>
-<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Maraschino.plg</PluginURL>
+<PluginURL>https://raw.githubusercontent.com/PhAzE-Variance/unRAID/master/Plugins/Sickbeard_alt.plg</PluginURL>
 <PluginAuthor>PhAzE</PluginAuthor>
 <Beta>False</Beta>
-<Category>MediaApp:Video MediaApp:Music MediaApp:Other</Category>
-<Name>Maraschino</Name>
+<Category>Downloaders: MediaApp:Video</Category>
+<Name>Sickbeard-Alt</Name>
 <Description>
-a simple web interface to act as a nice overview/front page for my XBMC HTPC.
+Sick Beard is a PVR for newsgroup users (with limited torrent support). It watches for new episodes of your favorite shows and when they are posted it downloads them, sorts and renames them, and optionally generates metadata for them. It currently supports NZBs.org, NZBMatrix, NZBs'R'Us, Newzbin, Womble's Index, NZB.su, TVTorrents and EZRSS and retrieves show information from theTVDB.com and TVRage.com.
 </Description>
 <Support>http://lime-technology.com/forum/index.php?topic=33341.0</Support>
-<Icon>http://www.maraschinoproject.com/static/images/maraschino_logo_large.png</Icon>
-<Project>http://www.maraschinoproject.com/</Project>
+<Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/sickbeard-icon.png</Icon>
+<Project>http://sickbeard.com/</Project>
 <Changes>
 2015.11.04.1
 ------------
@@ -22,6 +22,10 @@ a simple web interface to act as a nice overview/front page for my XBMC HTPC.
 2015.10.04.1
 ------------
 - Updated certificates package to newer version
+
+2015.09.11.1
+------------
+- Fixed forceupdate being on all the time, which breaks SickRage and other repos that don't use that feature
 
 2015.09.01.1
 ------------
@@ -58,6 +62,8 @@ a simple web interface to act as a nice overview/front page for my XBMC HTPC.
 2015.07.28.1
 ------------
 - Fixed glitch in updater that was messing up the entire OS on random occasions
+- Fixed link problem with Cheetah
+- Added new dependencies for Cheetah, now verified working properly
 
 2015.07.23.1
 ------------
